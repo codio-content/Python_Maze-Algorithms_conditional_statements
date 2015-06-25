@@ -1,18 +1,10 @@
 
-function keyPressedEvent(keyCode) {
-
-  if ( keyCode == 'LEFT')  {
-    player.moveLeft()
-  } 
-  if ( keyCode = 'RIGHT' ) {
-    player.moveRight()
-  } 
-  if ( keyCode == 'UP' ) {
-    player.moveUp()
-  } 
-  if ( keyCode == 'DOWN' ) {
-    player.moveDown() 
-  } 
- 
-}
-
+def keyPressedEvent(keyCode):
+  if keyCode == 'LEFT':
+    moveLeft()
+  if keyCode == 'RIGHT':
+    moveRight()
+  if keyCode == 'UP':
+    moveUp()
+  if keyCode == 'DOWN':
+    moveDown()

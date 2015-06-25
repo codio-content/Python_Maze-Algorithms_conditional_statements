@@ -8,8 +8,16 @@
     <script>        
       
       function userScriptLoaded() {  
-        createRandomMaze(16,8)            
-        endOfTurn (turnTaken)
+        createRandomMaze(16,8)
+        
+        var turnTaken = module.tp$getattr('turnTaken');
+
+        endOfTurn(function() {
+          if(turnTaken) {
+            Sk.misceval.callsim(turnTaken);
+          }  
+        });
+        
       }
       
       document.addEventListener('DOMContentLoaded', function() {    

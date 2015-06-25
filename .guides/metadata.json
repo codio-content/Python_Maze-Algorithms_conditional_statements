@@ -147,30 +147,6 @@
    "content-file": ".guides/content/Syntax-Errors-2-de18.md"
   },
   {
-   "id": "c4bd919-221f-5f0c-288b-87e0ad67d1a3",
-   "title": "Why == again",
-   "files": [
-    {
-     "path": "#tabs",
-     "action": "close"
-    },
-    {
-     "path": "public/py/py-2.py",
-     "panel": 0,
-     "action": "open"
-    },
-    {
-     "path": "#preview: https://{{domain9500}}/py-2",
-     "panel": 1,
-     "action": "open"
-    }
-   ],
-   "layout": "",
-   "path": [],
-   "type": "markdown",
-   "content-file": ".guides/content/Why----again-c4bd.md"
-  },
-  {
    "id": "ed4e6a29-14e7-4277-1ee2-2365dbe52422",
    "title": "Otherwise / Else",
    "files": [

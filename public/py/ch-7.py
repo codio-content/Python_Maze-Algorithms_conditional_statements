@@ -1,5 +1,3 @@
 
-function turnTaken() {
-
-}
-
+def turnTaken():
+  showMessage('...')

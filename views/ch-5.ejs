@@ -26,10 +26,15 @@
         playerHitWall(function(object) {
           playSound('bump');
         });        
-        playerHitObject (function (entity) {
-          collisionEvent(entity.type)
+
+        var collisionEvent = module.tp$getattr('collisionEvent');
+
+        playerHitObject (function(entity) {
+          if(collisionEvent) {
+            Sk.misceval.callsim(collisionEvent, new Sk.builtin.str(entity.type));
+          }  
         });
-        //playerStepTaken (function () {})        
+        
       }   
       
       document.addEventListener('DOMContentLoaded', function() {    

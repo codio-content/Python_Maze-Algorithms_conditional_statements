@@ -1,15 +1,8 @@
 
-function keyPressedEvent(keyCode) {
-
-  if ( keyCode == 'LEFT')  {
-    player.moveLeft()
-  } 
-  else if ( keyCode == 'RIGHT' ) {
-    player.moveRight()
-  } 
-  else {
+def keyPressedEvent(keyCode):
+  if keyCode == 'LEFT':
+    moveLeft()
+  elif keyCode == 'RIGHT':
+    moveRight()
+  else:
     showMessage('Left or Right was NOT pressed')
-  }
-
-}
-

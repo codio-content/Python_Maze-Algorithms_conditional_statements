@@ -1,34 +1,59 @@
 
 keyPressedEvent  = null;
 
-$.getScript(window.location.origin + '/public/js/' + window.testEnv.cmd + '.js?_=' + Date.now())
-.done(function (script, status) {
-  
-  createRandomMaze();
+var fileName = window.location.origin + '/public/py/' + window.testEnv.cmd + '.py';
+
+$.get(fileName)
+.success(function(data) {
+
+  if(data == 404) {
+    console.log(exception);
+    codio.setButtonValue(window.testEnv.id, codio.BUTTON_STATE.INVALID, fileName + ' not found'); 
+  }
+
+  try {        
+    createEmptyMaze();
     
-  var _left = false;
+    // load python
+    var module = Sk.importMainWithBody("", false, data);
+
+    // get reference to functions
+
+    keyPressedEvent = module.tp$getattr('keyPressedEvent');
     
-  if(typeof keyPressedEvent  == 'function') {
-  
-    player.moveLeft = function () {
-      _left = true;
+    // test
+
+    createRandomMaze();
+
+    var _left = false;
+
+    if(typeof keyPressedEvent != 'undefined') {
+
+      player.moveLeft = function () {
+        _left = true;
+      }
+      
+      Sk.misceval.callsim(keyPressedEvent, new Sk.builtin.str('LEFT'));
+
+      if(!_left) {
+        return codio.setButtonValue(window.testEnv.id, codio.BUTTON_STATE.FAILURE, 'Not quite right, try again!');
+      }   
+    }
+    else {
+      return codio.setButtonValue(window.testEnv.id, codio.BUTTON_STATE.FAILURE, 'Not quite right, try again!');
     }
 
-    keyPressedEvent('LEFT');
+    codio.setButtonValue(window.testEnv.id, codio.BUTTON_STATE.SUCCESS, 'Well done!');    
 
-    
-    if(!_left) {
-      return codio.setButtonValue(window.testEnv.id, codio.BUTTON_STATE.FAILURE, 'Not quite right, try again!');
-    }   
   }
-  else {
-    return codio.setButtonValue(window.testEnv.id, codio.BUTTON_STATE.FAILURE, 'Not quite right, try again!');
+  catch(exception) {
+    console.log('skulpt exception');
+    console.log(exception);
+    codio.setButtonValue(window.testEnv.id, codio.BUTTON_STATE.INVALID, exception.toString()); 
   }
-  
-  codio.setButtonValue(window.testEnv.id, codio.BUTTON_STATE.SUCCESS, 'Well done!');    
-
 })
-.fail(function (jqxhr, settings, exception) {
+.fail(function(jqxhr, settings, exception) {
+  console.log('jqxhr fail');
   console.log(exception);
   codio.setButtonValue(window.testEnv.id, codio.BUTTON_STATE.INVALID, exception.message); 
-});
+});    

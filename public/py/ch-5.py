@@ -1,10 +1,4 @@
 
-function collisionEvent(type) {
-
-  if ( type == 'wall') {
+def collisionEvent(type):
+  if type == 'wall':
     showMessage('You hit a wall')
-  }
-
-
-}
-

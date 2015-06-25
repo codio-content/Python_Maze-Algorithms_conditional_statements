@@ -9,8 +9,14 @@
          
       
       function userScriptLoaded() {
-        keyPressed (keyPressedEvent)
-      }      
+        var keyPressedEvent = module.tp$getattr('keyPressedEvent');
+
+        keyPressed (function(keyCode) {
+          if(keyPressedEvent) {
+            Sk.misceval.callsim(keyPressedEvent, new Sk.builtin.str(keyCode));
+          }  
+        });
+      }    
       
       document.addEventListener('DOMContentLoaded', function() {    
         importPythonGame();

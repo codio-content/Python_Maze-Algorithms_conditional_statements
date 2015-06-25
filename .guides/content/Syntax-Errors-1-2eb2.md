@@ -11,12 +11,8 @@ If you've fixed it, you should be able to move the player to the left (other dir
 |||guidance
 ## Solution
 
-```javascript
-function keyPressedEvent(keyCode) {
-
-  if ( keyCode == 'LEFT' ) {
-    player.moveLeft()
-  } 
- 
-}
+```python
+def keyPressedEvent(keyCode):
+  if keyCode == 'LEFT':
+    moveLeft()
 ```

@@ -12,25 +12,19 @@ Make sure that your player moves in all directions. Just getting rid of the synt
 
 There are two things wrong with this code.
 
-Firstly, there is a `)` missing after `LEFT`
+Firstly, there is a `:` missing after `LEFT`
 
 Secondly, we have `=` instead of `==`
 
-```javascript
-function keyPressedEvent(keyCode) {
+```python
 
-  if ( keyCode == 'LEFT' ) {
-    player.moveLeft()
-  } 
-  if ( keyCode == 'RIGHT' ) {
-    player.moveRight()
-  } 
-  if ( keyCode == 'UP' ) {
-    player.moveUp()
-  } 
-  if ( keyCode == 'DOWN' ) {
-    player.moveDown() 
-  }
-  
-}
+def keyPressedEvent(keyCode):
+  if keyCode == 'LEFT':
+    moveLeft()
+  if keyCode == 'RIGHT':
+    moveRight()
+  if keyCode == 'UP':
+    moveUp()
+  if keyCode == 'DOWN':
+    moveDown()
 ```

@@ -15,11 +15,8 @@ We want you to write a message saying "You hit : XXXXX" where XXXXX is the thing
 |||guidance
 ## Solution
 
-```javascript
-function collisionEvent(type) {
-
+```python
+def collisionEvent(type):
   showMessage('You hit : ' + type)
-
-}
 ```
 |||

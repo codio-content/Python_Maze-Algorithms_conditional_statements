@@ -1,7 +1,3 @@
 
-function collisionEvent(type) {
-
-  
-
-}
-
+def collisionEvent(type):
+  showMessage('...')

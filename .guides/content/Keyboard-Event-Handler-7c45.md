@@ -11,10 +11,9 @@ Notice that you can only move the player to the left. We will deal with this in 
 ## keyCode
 Let's look at the following statement
 
-```javascript
-if ( keyCode == 'LEFT' ) {
-  player.moveLeft()
-} 
+```python
+  if keyCode == 'LEFT':
+    moveLeft()
 ```
 
 `keyCode` is a parameter that is passed into our event handler. It contains a string that indicates which key has been pressed by the user. It has the following values
@@ -26,4 +25,4 @@ if ( keyCode == 'LEFT' ) {
 | Left Arrow | LEFT |
 | Right Arrow | RIGHT |
 
-So our code is saying "if the `keyCode` of the key pressed is `LEFT` then move the player to the left.
+So our code is saying "if the `keyCode` of the key pressed is `LEFT` then move the player to the left. Notice how the `moveLeft()` portion of the code is indented? Any code that needs to run when the if statement condition is met needs to be indented.

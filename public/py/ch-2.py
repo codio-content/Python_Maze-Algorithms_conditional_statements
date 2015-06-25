@@ -1,9 +1,4 @@
 
-function keyPressedEvent(keyCode) {
-
-  if ( keyCode == 'LEFT' 
-    player.moveLeft()
-  } 
- 
-}
-
+def keyPressedEvent(keyCode):
+  if keyCode == 'LEFT'
+    moveLeft()
