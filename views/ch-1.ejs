@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>One</title>
+    
+    <% include include/game.ejs %>    
+ 
+    <script>   
+         
+      
+      function userScriptLoaded() {
+        keyPressed (keyPressedEvent)
+      }      
+      
+      document.addEventListener('DOMContentLoaded', function() {    
+        
+        // Set up game
+        createEmptyMaze(16, 8) 
+        addPlayer(6, 4)
+        
+        // Load the user script file
+        loadUserScript('/js/ch-1.js')
+        
+      })    
+    </script>
+    
+  </head>
+  <body>
+    <div id="game"></div>
+  </body>
+</html>

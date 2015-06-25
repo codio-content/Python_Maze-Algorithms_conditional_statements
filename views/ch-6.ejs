@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>One</title>
+    
+    <% include include/game.ejs %>    
+ 
+    <script>        
+      
+      function userScriptLoaded() {
+        playerHitMonster(function(object) {
+          playSound('fight');
+          energy -= object.damage;
+          score = energy * 5 / steps;
+        });
+
+        playerHitEnergy(function(object) {
+          energy += object.energy;
+          removeObject(object);
+        });
+
+        playerHitGoal(function(object) {
+          playSound('goal-reached');
+        });     
+        playerHitWall(function(object) {
+          playSound('bump');
+        });        
+        
+        playerHitObject (function (entity) {
+          collisionEvent(entity.type)
+        });
+        //playerStepTaken (function () {})        
+      }   
+      
+      document.addEventListener('DOMContentLoaded', function() {    
+        
+        // Set up game
+        createRandomMaze(16, 8) 
+        addPlayer()
+        
+        // Load the user script file
+        loadUserScript('/js/ch-6.js')
+        
+      })    
+    </script>
+    
+  </head>
+  <body>
+    <div id="game"></div>
+  </body>
+</html>
