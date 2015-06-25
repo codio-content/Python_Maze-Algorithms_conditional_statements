@@ -7,8 +7,23 @@ var router = express.Router();
 
 
 // Keyboard handler
-router.get('/js-1', function(req, res) {
-  res.render('js-1');
+router.get('/py-1', function(req, res) {
+  res.render('py-1');
+});
+
+// Why == again
+router.get('/py-2', function(req, res) {
+  res.render('py-2');
+});
+
+// Else
+router.get('/py-3', function(req, res) {
+  res.render('py-3');
+});
+
+// Else If
+router.get('/py-4', function(req, res) {
+  res.render('py-4');
 });
 
 // Keyboard handler complete all keys
@@ -24,21 +39,6 @@ router.get('/ch-2', function(req, res) {
 // Keyboard handler fix the error 2
 router.get('/ch-3', function(req, res) {
   res.render('ch-3');
-});
-
-// Why == again
-router.get('/js-2', function(req, res) {
-  res.render('js-2');
-});
-
-// Else
-router.get('/js-3', function(req, res) {
-  res.render('js-3');
-});
-
-// Else If
-router.get('/js-4', function(req, res) {
-  res.render('js-4');
 });
 
 // Else If completion challenge
