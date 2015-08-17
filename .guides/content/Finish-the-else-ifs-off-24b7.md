@@ -1,11 +1,5 @@
-|||challenge
-Your job is to complete the code on the left by inserting the missing `else if` statements and code to handle the up, down and right arrow keys.
 
-If none of the arrow keys were pressed, then show a message.
-
-{check it!! | custom}(ch-4)
-
-|||
+{Check It!|assessment}(test-1602620350)
 
 |||guidance
 ## Solution
@@ -23,3 +17,4 @@ def keyPressedEvent(keyCode):
   else:
     showMessage('None of the arrow keys were pressed')
 ```
+|||

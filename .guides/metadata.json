@@ -12,7 +12,9 @@
    "layout": "1-panel",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Conditional-Statements-28fc.md"
+   "content-file": ".guides/content/Conditional-Statements-28fc.md",
+   "chapter": true,
+   "reset": []
   },
   {
    "id": "61842fa7-3e96-f590-f517-dd7098de582",
@@ -31,7 +33,9 @@
    "layout": "2-panels",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Moving-the-player-6184.md"
+   "content-file": ".guides/content/Moving-the-player-6184.md",
+   "chapter": false,
+   "reset": []
   },
   {
    "id": "7c457c5d-26-968b-b1c4-23a2cc84285",
@@ -55,7 +59,9 @@
    "layout": "3-cell",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Keyboard-Event-Handler-7c45.md"
+   "content-file": ".guides/content/Keyboard-Event-Handler-7c45.md",
+   "chapter": false,
+   "reset": []
   },
   {
    "id": "c6ea9901-3b27-3eda-adf2-fb464beef965",
@@ -64,7 +70,9 @@
    "layout": "",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/If-explained-c6ea.md"
+   "content-file": ".guides/content/If-explained-c6ea.md",
+   "chapter": true,
+   "reset": []
   },
   {
    "id": "34eed8fd-7945-3558-1d2d-e603af5073a7",
@@ -72,7 +80,9 @@
    "files": [],
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Why------34ee.md"
+   "content-file": ".guides/content/Why------34ee.md",
+   "chapter": false,
+   "reset": []
   },
   {
    "id": "cc64408c-3c63-164c-6d45-d7c885ff88ef",
@@ -96,7 +106,9 @@
    "layout": "",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Completing-the-handler-cc64.md"
+   "content-file": ".guides/content/Completing-the-handler-cc64.md",
+   "chapter": false,
+   "reset": []
   },
   {
    "id": "2eb2da15-7fde-e163-db7-2ca4a3e66ec",
@@ -120,7 +132,9 @@
    "layout": "",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Syntax-Errors-1-2eb2.md"
+   "content-file": ".guides/content/Syntax-Errors-1-2eb2.md",
+   "chapter": false,
+   "reset": []
   },
   {
    "id": "de18feb8-29-8db2-8e87-4efd45eca923",
@@ -144,7 +158,9 @@
    "layout": "",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Syntax-Errors-2-de18.md"
+   "content-file": ".guides/content/Syntax-Errors-2-de18.md",
+   "chapter": false,
+   "reset": []
   },
   {
    "id": "ed4e6a29-14e7-4277-1ee2-2365dbe52422",
@@ -168,7 +184,9 @@
    "layout": "",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Otherwise---Else-ed4e.md"
+   "content-file": ".guides/content/Otherwise---Else-ed4e.md",
+   "chapter": true,
+   "reset": []
   },
   {
    "id": "16d4d9df-9e19-ae-a43-bafab63e7614",
@@ -192,7 +210,9 @@
    "layout": "",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Else-If-16d4.md"
+   "content-file": ".guides/content/Else-If-16d4.md",
+   "chapter": true,
+   "reset": []
   },
   {
    "id": "24b7dd36-db4d-85f1-afe3-ca6338ed7b84",
@@ -216,7 +236,9 @@
    "layout": "",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Finish-the-else-ifs-off-24b7.md"
+   "content-file": ".guides/content/Finish-the-else-ifs-off-24b7.md",
+   "chapter": false,
+   "reset": []
   },
   {
    "id": "f6db20c7-c36c-896c-ca2b-c6481a8e7391",
@@ -240,7 +262,9 @@
    "layout": "",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Collision-Message-f6db.md"
+   "content-file": ".guides/content/Collision-Message-f6db.md",
+   "chapter": false,
+   "reset": []
   },
   {
    "id": "df8b300b-e43a-fa23-4bd3-8b7ba5b61e93",
@@ -264,15 +288,20 @@
    "layout": "",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Challenge-df8b.md"
+   "content-file": ".guides/content/Challenge-df8b.md",
+   "chapter": false,
+   "reset": []
   },
   {
    "id": "78c1c7c6-1c4c-279e-41ad-913ce1d98932",
    "title": ">, >=, <, <=, !=",
    "files": [],
+   "layout": "",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/-----------------78c1.md"
+   "content-file": ".guides/content/-----------------78c1.md",
+   "chapter": true,
+   "reset": []
   },
   {
    "id": "b966a4fc-ff49-d4c1-7729-a426d1c7731",
@@ -296,7 +325,9 @@
    "layout": "",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Challenge-b966.md"
+   "content-file": ".guides/content/Challenge-b966.md",
+   "chapter": false,
+   "reset": []
   },
   {
    "id": "7ec3d54d-d7f5-3f4-a642-7d7240b98801",
@@ -320,7 +351,9 @@
    "layout": "",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Another-challenge-7ec3.md"
+   "content-file": ".guides/content/Another-challenge-7ec3.md",
+   "chapter": false,
+   "reset": []
   },
   {
    "id": "ccfd6a56-6d59-6f7f-c0a7-906e5844acf4",
@@ -328,15 +361,12 @@
    "files": [],
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/That-s-all-folks--ccfd.md"
+   "content-file": ".guides/content/That-s-all-folks--ccfd.md",
+   "chapter": false,
+   "reset": []
   }
  ],
- "theme": "paper",
- "scripts": [
-  "https://code.jquery.com/jquery-2.1.4.min.js",
-  "https://mazegame.codio.com/skulpt.min.js",
-  "https://mazegame.codio.com/game.js",
-  "https://mazegame.codio.com/game.python.js",
-  ".guides/test_static.js"
- ]
+ "theme": "light",
+ "scripts": [],
+ "lexikonTopic": ""
 }
