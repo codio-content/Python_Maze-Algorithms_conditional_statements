@@ -1,4 +1,3 @@
-
 def keyPressedEvent(keyCode):
-  if keyCode == 'LEFT'
+  if keyCode == 'LEFT':
     moveLeft()
