@@ -1,0 +1,130 @@
+[
+ {
+  "type": "test",
+  "taskId": "test-1602620350",
+  "source": {
+   "showName": false,
+   "answers": [],
+   "tokens": {
+    "blank": [],
+    "text": []
+   },
+   "name": "Else if",
+   "instructions": "Your job is to complete the code on the left by inserting the missing `else if` statements and code to handle the up, down and right arrow keys.\n\nIf none of the arrow keys were pressed, then show a message.\n",
+   "command": "python .guides/tests/ch-4.py",
+   "points": 1
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-2223641897",
+  "source": {
+   "showName": false,
+   "answers": [],
+   "tokens": {
+    "blank": [],
+    "text": []
+   },
+   "name": "Less and greater",
+   "instructions": "Inside the `turnTaken()` event handler, write some code that checks the `getEnergy()` value as follows\n\n- \"if energy is less than 10, show the message \"Low Energy\".\n- \"if energy is greater than or equal to 30 show the message \"Lots of energy\".\n- Otherwise show \"Energy OK\".\n\nYou need to test it out in the game first and make sure you get all the messages.\n",
+   "command": "python .guides/tests/ch-8.py",
+   "points": 1
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-2229360693",
+  "source": {
+   "showName": false,
+   "answers": [],
+   "tokens": {
+    "blank": [],
+    "text": []
+   },
+   "name": "Multiple syntax errors",
+   "instructions": "Here is some more broken code that is a bit harder to fix.\n\nMake sure that your player moves in all directions. Just getting rid of the syntax errors is not enough!",
+   "command": "python .guides/tests/ch-3.py",
+   "points": 1
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-2668499237",
+  "source": {
+   "showName": false,
+   "answers": [],
+   "tokens": {
+    "blank": [],
+    "text": []
+   },
+   "name": "Not equal",
+   "instructions": "Inside the `turnTaken()` event handler, write some code that checks if the player energy `getEnergy()` is less than `10`, then show the message 'Low energy' otherwise say 'Energy OK'.\n\nTest it out in the game first and check you get the right message when the energy is 10 or more and also when less than 10.\n",
+   "command": "python .guides/tests/ch-7.py",
+   "points": 1
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-3476434204",
+  "source": {
+   "showName": false,
+   "answers": [],
+   "tokens": {
+    "blank": [],
+    "text": []
+   },
+   "name": "Working with collision type",
+   "instructions": "Here's another challenge to make you think.\n\nWe want you to write a message saying \"You hit : XXXXX\" where XXXXX is the thing you hit.\n\n**However** : you are not allowed to use an `if` statement. \n\n**Hint** : it's actually very easy and involves one line of code and involves a string.\n",
+   "command": "python .guides/tests/ch-6.py ",
+   "points": 1
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-3863060338",
+  "source": {
+   "showName": false,
+   "answers": [],
+   "tokens": {
+    "blank": [],
+    "text": []
+   },
+   "name": "Missing brackets",
+   "instructions": "In the code on the left, we have one `if` statement which has been badly written.\n\nYour job is to fix the code so it runs properly without a syntax error.\n\nIf you've fixed it, you should be able to move the player to the left (other directions won't work).\n",
+   "command": "python .guides/tests/ch-2.py",
+   "points": 1
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-855045964",
+  "source": {
+   "showName": false,
+   "answers": [],
+   "tokens": {
+    "blank": [],
+    "text": []
+   },
+   "name": "What did we collide with",
+   "instructions": "In this challenge, we have provided you with an event handler `collisionEvent()`. It will get called whenever a collision is detected.\n\nYour job is to use `if` and `elif` statements to write a message to the message bar saying what collision took place.\n\nNotice the parameter `type` being passed to the handler. This contains a string value, depending on what you just hit. You can see below the possible string values that `type` can contain.\n\nYou can treat this as if it were a variable.\n\n**Hint:** when testing a string condition, you will use \n\n```python\nif type == 'wall':\n  showMessage('You hit a wall')\n```\n\nHere are the possible values that `type` can have.\n\n| Types |\n| - |\n| wall |\n| monster |\n| energy |\n| goal |",
+   "command": "python .guides/tests/ch-5.py",
+   "points": 1
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-987418362",
+  "source": {
+   "showName": false,
+   "answers": [],
+   "tokens": {
+    "blank": [],
+    "text": []
+   },
+   "name": "Moving the player",
+   "instructions": "Complete the keyboard event handler by making sure all 4 arrow keys are properly handled. \n\nUse copy and paste rather than typing out the new code from scratch.\n\nBelow is the table of keycodes you can refer to.\n",
+   "command": "python .guides/tests/ch-1.py",
+   "points": 1
+  }
+ }
+]
